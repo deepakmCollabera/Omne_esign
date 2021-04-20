@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="76px" viewBox="0 0 77 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Solid/angle-double-right</title>
+    <defs>
+        <filter x="-2.5%" y="-3.5%" width="105.0%" height="107.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.195876755 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Take-Action---EAF---Education" transform="translate(-511.000000, -1170.000000)" fill="#B7B7B7">
+            <g id="Group-46" transform="translate(504.000000, 524.000000)" filter="url(#filter-1)">
+                <g id="Group-2" transform="translate(20.000000, 659.000000)">
+                    <g id="Group-60" transform="translate(13.045000, 13.000000)">
+                        <path d="M11.973,13.02 L3.813,21.18 C3.249,21.744 2.337,21.744 1.779,21.18 L0.423,19.824 C-0.141,19.26 -0.141,18.348 0.423,17.79 L6.207,12.006 L0.423,6.222 C-0.141,5.658 -0.141,4.746 0.423,4.188 L1.773,2.82 C2.337,2.256 3.249,2.256 3.807,2.82 L11.967,10.98 C12.537,11.544 12.537,12.456 11.973,13.02 L11.973,13.02 Z M23.493,10.98 L15.333,2.82 C14.769,2.256 13.857,2.256 13.299,2.82 L11.943,4.176 C11.379,4.74 11.379,5.652 11.943,6.21 L17.727,11.994 L11.943,17.778 C11.379,18.342 11.379,19.254 11.943,19.812 L13.299,21.168 C13.863,21.732 14.775,21.732 15.333,21.168 L23.493,13.008 C24.057,12.456 24.057,11.544 23.493,10.98 Z" id="Mask-Copy" transform="translate(11.958000, 12.000000) scale(-1, 1) translate(-11.958000, -12.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
