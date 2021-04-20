@@ -1,0 +1,283 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-- main nav bar -->
+    <div class="nav_menu">
+      <div class="custom_container">
+        <div class="row">
+          <div class="side_menu">
+            <img src="./images/icons/ic-menu.svg" alt="ic-menu" />
+          </div>
+          <div class="nav_brand">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
+          <div class="page_title">My Documents</div>
+        </div>
+      </div>
+    </div>
+    <!-- main nav bar -->
+
+    <!-- secondary nav -->
+    <div class="secondary_nav">
+      <div class="custom_container">
+        <div class="secondary_nav_items">
+          <div class="sn_item active">
+            <img
+              src="./images/icons/ic-information-active.svg"
+              alt="ic-information-copy-2"
+            />
+            My Info
+          </div>
+          <div class="sn_item">
+            <img
+              src="./images/icons/ic-documents-copy-3.svg"
+              alt="ic-documents-copy-2"
+            />
+            Take Action
+            <span>7</span>
+          </div>
+          <div class="sn_item">
+            <img
+              src="./images/icons/ic-completed-docs-copy-2.svg"
+              alt="ic-completed-docs-copy-2"
+            />
+            View Completed Docs
+            <span>10</span>
+          </div>
+          <div class="sn_item ">
+            <img
+              src="./images/icons/review-policy-docs-copy-4.svg"
+              alt="review-policy-docs-copy-4"
+            />
+            Information
+            <span>7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- secondary nav -->
+
+    <!-- main wrapper -->
+    <div class="custom_container">
+      <div class="main_wrapper myinfo_wrapper">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="myinfo_side">
+              <h4>Basic Information</h4>
+              <div class="row mb-3">
+                <div class="col-md-2">
+                  <img src="./images/icons/user.svg" alt="user" />
+                </div>
+                <div class="col-md-10">
+                  <h6>Zachary Smith</h6>
+                  <p>Collabera ID: 1234</p>
+                </div>
+              </div>
+              <h5>Project Information</h5>
+              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <hr />
+              <h5>Onboarding Contact</h5>
+              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="keyinfo_wrap">
+              <h4>Key Information</h4>
+              <h6>Name and SSN must match the information on your social security card</h6>
+              <form action="">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-control required">
+                      <label for="">Last NAME <span>*</span></label>
+                      <input type="text" placeholder="Enter Last Name" required />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal fade" id="supportingDocs">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Document Upload</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span
+                ><img src="./images/icons/ic-close.svg" alt="ic-close"
+              /></span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="row m-0">
+              <div class="col-md-8">
+                <div class="draganddrop">
+                  <input type="file" />
+                  <span
+                    ><img src="./images/icons/ic-close.svg" alt="ic-close"
+                  /></span>
+                  <div class="dragtext mx-auto">
+                    <h2>
+                      Drag and Drop <br />
+                      your file here
+                    </h2>
+                    <p>
+                      Supporting Document <br />
+                      Federal W-4
+                    </p>
+                  </div>
+                </div>
+                <div class="basic_info">
+                  <table>
+                    <tr>
+                      <td>Candidate name :</td>
+                      <td>&nbsp;<b>Martin Ray</b></td>
+                    </tr>
+                    <tr>
+                      <td>Collabera ID :</td>
+                      <td>&nbsp;<b>1234</b></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="current_docs pt-2">
+                  <h4>Current Document List</h4>
+                  <div class="cd_main_wrap">
+                    <div class="cd_wrap">
+                      <div class="sl_num">1.</div>
+                      <div class="cd_title">
+                        Federal W-4
+                        <span class="float-right"
+                          ><img
+                            src="./images/icons/noun-upload-3129532.svg"
+                            alt="noun-upload-3129532"
+                        /></span>
+                      </div>
+                      <div class="cd_file">
+                        Federal W-4 .docx
+                        <span class="float-right"
+                          ><img
+                            src="./images/icons/ic-delete.svg"
+                            alt="ic-delete"
+                        /></span>
+                      </div>
+                      <div class="cd_time">3rd Feb, Fri. 2021 ● 16:35</div>
+                    </div>
+                    <div class="cd_wrap">
+                      <div class="sl_num">2.</div>
+                      <div class="cd_title">
+                        Federal W-4
+                        <span class="float-right"
+                          ><img
+                            src="./images/icons/noun-upload-3129532.svg"
+                            alt="noun-upload-3129532"
+                        /></span>
+                      </div>
+                      <div class="cd_file">
+                        Federal W-4 .docx
+                        <span class="float-right"
+                          ><img
+                            src="./images/icons/ic-delete.svg"
+                            alt="ic-delete"
+                        /></span>
+                      </div>
+                      <div class="cd_time">3rd Feb, Fri. 2021 ● 16:35</div>
+                    </div>
+                    <div class="cd_wrap">
+                      <div class="sl_num">3.</div>
+                      <div class="cd_title">
+                        Federal W-4
+                        <span class="float-right"
+                          ><img
+                            src="./images/icons/noun-upload-3129532.svg"
+                            alt="noun-upload-3129532"
+                        /></span>
+                      </div>
+                      <div class="cd_file">
+                        Federal W-4 .docx
+                        <span class="float-right"
+                          ><img
+                            src="./images/icons/ic-delete.svg"
+                            alt="ic-delete"
+                        /></span>
+                      </div>
+                      <div class="cd_time">3rd Feb, Fri. 2021 ● 16:35</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 p-0">
+                <div class="completed_docs">
+                  <h4 class="mt-0">Completed Documents (4)</h4>
+                  <div class="comd_main_wrap">
+                    <div class="com_doc">
+                      <h5>3rd Feb, Fri. 2021 ● 16:24</h5>
+                      <ul>
+                        <li>Offer Letter</li>
+                        <li>
+                          Project acceptance agreement
+                          <span class="float-right"
+                            ><img
+                              src="./images/icons/ic-attach.svg"
+                              alt="ic-attach"
+                            />&nbsp; (2)</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="com_doc">
+                      <h5>3rd Feb, Fri. 2021 ● 16:24</h5>
+                      <ul>
+                        <li>Offer Letter</li>
+                        <li>
+                          Project acceptance agreement
+                          <span class="float-right"
+                            ><img
+                              src="./images/icons/ic-attach.svg"
+                              alt="ic-attach"
+                            />&nbsp; (2)</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main wrapper -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
