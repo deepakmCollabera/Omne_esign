@@ -21,4 +21,8 @@ $(document).ready(function(){
     e.preventDefault();
     $(this).children(".profile_card").toggleClass("active");
   })
+  
 })
+$(function() {
+  $('.box').matchHeight();
+});
