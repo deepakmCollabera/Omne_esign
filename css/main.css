@@ -643,6 +643,14 @@ button {
   background-color: #ffffff;
   margin-top: 2rem;
   min-height: 500px;
+  height: 93.3%;
+  position: relative;
+}
+.ef_main.emp_1{
+  min-height: 1350px !important;
+}
+.ef_main.dis_1{
+  min-height: 2420px !important;
 }
 .ef_head h3 {
   font-size: 16px;
@@ -663,6 +671,15 @@ button {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 1rem;
   font-size: 14px;
+}
+.ef_form > form > .row:first-child, .formpad{
+  padding-bottom: 80px;
+}
+.ef_form > form > .row:last-child, .prevnext_wrap{
+  position: absolute;
+  width: 97%;
+  bottom: 2rem;
+  left: 3rem;
 }
 .form-control {
   border: none;
@@ -1531,6 +1548,7 @@ form .submit_form .submit_btn {
   border-radius: 4px;
   box-shadow: 0 2px 10px 0 rgb(0 0 0 / 18%);
   padding: 2rem;
+  margin-top: 2rem;
 }
 .physicalsign_doc h4 {
   font-size: 14px;
@@ -1540,9 +1558,6 @@ form .submit_form .submit_btn {
   color: #4a4a4a;
   font-size: 12px;
 }
-.physicalsign_doc .table_wrap .custom_tr .custom_th:last-child {
-  opacity: 0;
-}
 .physicalsign_doc .table_wrap > .custom_tr:first-child {
   border-top: 1px solid #56a9ff;
   border-bottom: 1px solid #56a9ff;
@@ -1551,6 +1566,12 @@ form .submit_form .submit_btn {
   justify-content: space-around;
   display: flex;
 }
+.physicalsign_doc .table_wrap .custom_tr .custom_th, .physicalsign_doc .table_wrap .custom_tr .custom_td{
+  text-align: center;
+} 
+.physicalsign_doc .table_wrap .custom_tr .custom_th:first-child, .physicalsign_doc .table_wrap .custom_tr .custom_td:first-child{
+  text-align: left !important;
+} 
 .custom_table_body > .custom_tr {
   background-color: #ffffff !important;
 }
