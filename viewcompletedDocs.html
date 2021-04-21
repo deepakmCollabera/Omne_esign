@@ -146,7 +146,7 @@
                       </span>
                     </a>
                   </div>
-                  <div id="collapseOneOne" class="accordion-body collapse" style="height: 0px">
+                  <div id="collapseOneOne" class="accordion-body ">
                     <div class="accordion-inner">
                       <div class="table_wrap">
                         <div class="custom_tr row">
@@ -220,7 +220,7 @@
                       </span>
                     </a>
                   </div>
-                  <div id="collapseOneTwo" class="accordion-body collapse" style="height: 0px">
+                  <div id="collapseOneTwo" class="accordion-body ">
                     <div class="accordion-inner">
                       <div class="table_wrap">
                         <div class="custom_tr row">
@@ -352,7 +352,7 @@
                       </span>
                     </a>
                   </div>
-                  <div id="collapsetwoOne" class="accordion-body collapse" style="height: 0px">
+                  <div id="collapsetwoOne" class="accordion-body ">
                     <div class="accordion-inner">
                       <div class="table_wrap">
                         <div class="custom_tr row">
@@ -442,7 +442,7 @@
                       </span>
                     </a>
                   </div>
-                  <div id="collapsetwoTwo" class="accordion-body collapse" style="height: 0px">
+                  <div id="collapsetwoTwo" class="accordion-body">
                     <div class="accordion-inner">
                       <div class="table_wrap">
                         <div class="custom_tr row">
@@ -747,6 +747,14 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
 <script src="./js/script.js"></script>
+<script>
+  $(".accordion-toggle.custom_tr").click(function(){
+  window.setTimeout(function(){
+    $(".info_table .accordion .accordion-group .accordion-heading .accordion-toggle").removeClass("collapsed");
+  },100)
+})
+</script>
 
 </html>
