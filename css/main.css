@@ -672,10 +672,10 @@ button {
   margin-bottom: 1rem;
   font-size: 14px;
 }
-.ef_form > form > .row:first-child, .formpad{
+.formpad{
   padding-bottom: 80px;
 }
-.ef_form > form > .row:last-child, .prevnext_wrap{
+.prevnext_wrap{
   position: absolute;
   width: 97%;
   bottom: 2rem;
