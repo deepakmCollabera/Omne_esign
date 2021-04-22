@@ -701,7 +701,11 @@ input[type="radio"], input[type="checkbox"]{
   border: none;
   box-shadow: none;
   padding: 1rem 0;
-  display: inline-table;
+  /* display: inline-table; */
+  height: 70px;
+}
+.checkbox_wrap .form-control{
+  height: auto;
 }
 .form-control input,
 .form-control textarea,
@@ -1524,7 +1528,7 @@ form .submit_form .submit_btn {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #ffffff;
-  left: 74%;
+  left: 83%;
   width: 0;
   height: 0;
   position: absolute;
@@ -1608,6 +1612,10 @@ form .submit_form .submit_btn {
 .physicalsign_doc .table_wrap .custom_tr .custom_td:last-child {
   justify-content: space-around;
   display: flex;
+}
+.physicalsign_doc .table_wrap .custom_tr{
+  display: flex;
+  align-items: center;
 }
 .physicalsign_doc .table_wrap .custom_tr .custom_th, .physicalsign_doc .table_wrap .custom_tr .custom_td, .info_table .table_wrap .custom_tr .custom_th, .info_table .table_wrap .custom_tr .custom_td{
   text-align: center;
@@ -1755,7 +1763,18 @@ form .submit_form .submit_btn {
   padding: .5rem 1.2rem;
   border-radius: 4px;
 }
-
+.total_completed{
+  border: 1px solid #9b9b9b;
+  padding: .4rem;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+}
 
 /* Firfox -- Media query */
 @-moz-document url-prefix() {
