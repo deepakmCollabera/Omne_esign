@@ -121,6 +121,9 @@ button {
   font-weight: 600;
   color: #ffffff;
 }
+input[type="radio"], input[type="checkbox"]{
+  margin-top: 0;
+}
 
 /* secondary nav */
 .secondary_nav {
@@ -551,6 +554,7 @@ button {
   border-radius: 4px;
   box-shadow: 0px 0px 4px 2px #e7e7e7;
   position: relative;
+  margin: 0 auto;
 }
 .ef_nav ul.popup_show::after {
   content: "Use this timeline to move to required sections.";
@@ -736,6 +740,7 @@ button {
 .checkbox_wrap .form-control label {
   max-width: 50%;
   cursor: pointer;
+  line-height: 1;
 }
 .checkbox_wrap p {
   font-size: 12px;
@@ -762,7 +767,7 @@ button {
   align-items: center;
   /* width: 20%; */
   /* padding-left: 10px; */
-  padding-top: 30px;
+  padding-top: 40px;
 }
 .license_wrap .row:last-child .lice_actions {
   padding-top: 10px !important;
@@ -953,15 +958,18 @@ button {
 /* EAF - POSITION REF */
 .form-control-2 {
   padding: 0.5rem 0 1.5rem;
+  display: flex;
+  align-items: center;
 }
 .form-control-2 label {
   font-size: 12px;
   color: #4a4a4a;
   font-weight: 400;
   margin: 0 10px 0 0;
+  width: 35%;
 }
 .form-control-2 input {
-  width: 60%;
+  width: -webkit-fill-available;
   border-radius: 4px;
   border: solid 1px #e7e7e7;
   background-color: #ffffff;
@@ -971,9 +979,9 @@ button {
   padding: 6px 12px;
   outline: none;
 }
-.pos_ref .checkbox_wrap .form-control:last-child {
+/* .pos_ref .checkbox_wrap .form-control:last-child {
   display: inline !important;
-}
+} */
 .prev_btn {
   background-color: transparent;
   border: none;
@@ -1047,15 +1055,19 @@ button {
 }
 .form_reset_btn .add_address {
   color: #56a9ff;
+  margin-left: 2rem;
 }
 .form-control.dropdown::after {
-  content: url("../images/icons/ic-dropdown.svg");
+  content: " ";
+  background-image: url(../images/icons/ic-dropdown.svg);
   display: inline-block;
-  width: 20px;
+  width: 14px;
   position: absolute;
-  height: 20px;
-  top: 34px;
+  height: 14px;
+  top: 40px;
   right: 4%;
+  z-index: 0;
+  background-position: center;
 }
 .form-control.calendar::after {
   /* content: url("../images/icons/ic-calendar.svg"); */
@@ -1396,7 +1408,7 @@ form .submit_form button {
 }
 form .submit_form .submit_btn {
   background-color: #56a9ff;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .disclosure_det .accordion-toggle {
   position: relative;
@@ -1500,6 +1512,15 @@ form .submit_form .submit_btn {
   z-index: 9;
   top: -7px;
 }
+.profile_card .close_card {
+  right: 3%;
+  position: absolute;
+  z-index: 9;
+  top: 10%;
+}
+.profile_card .close_card img{
+  max-width: 16px;
+}
 .profile_card h5 {
   font-size: 10px;
   color: #56a9ff;
@@ -1562,14 +1583,17 @@ form .submit_form .submit_btn {
   border-top: 1px solid #56a9ff;
   border-bottom: 1px solid #56a9ff;
 }
+.physicalsign_doc .table_wrap .custom_tr:first-child, .info_table .table_wrap .custom_tr:first-child{
+  background-color: #F2F5FA !important;
+}
 .physicalsign_doc .table_wrap .custom_tr .custom_td:last-child {
   justify-content: space-around;
   display: flex;
 }
-.physicalsign_doc .table_wrap .custom_tr .custom_th, .physicalsign_doc .table_wrap .custom_tr .custom_td{
+.physicalsign_doc .table_wrap .custom_tr .custom_th, .physicalsign_doc .table_wrap .custom_tr .custom_td, .info_table .table_wrap .custom_tr .custom_th, .info_table .table_wrap .custom_tr .custom_td{
   text-align: center;
 } 
-.physicalsign_doc .table_wrap .custom_tr .custom_th:first-child, .physicalsign_doc .table_wrap .custom_tr .custom_td:first-child{
+.physicalsign_doc .table_wrap .custom_tr .custom_th:first-child, .physicalsign_doc .table_wrap .custom_tr .custom_td:first-child, .info_table .table_wrap .custom_tr .custom_th:first-child, .info_table .table_wrap .custom_tr .custom_td:first-child{
   text-align: left !important;
 } 
 .custom_table_body > .custom_tr {
@@ -1686,6 +1710,31 @@ form .submit_form .submit_btn {
   font-size: 12px;
   color: #4a4a4a;
 }
+.btn_wrap_modal{
+  text-align: right;
+  padding-bottom: 1rem;
+}
+.btn_wrap_modal .reset_btn{
+  border: 1px solid #4a90e2;
+  color: #56a9ff;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  margin-right: 15px;
+  padding: .5rem 1.2rem;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.btn_wrap_modal .submit_btn{
+  border: none;
+  color: #fff;
+  background-color: #56a9ff;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  padding: .5rem 1.2rem;
+  border-radius: 4px;
+}
 
 
 /* Firfox -- Media query */
@@ -1703,5 +1752,18 @@ form .submit_form .submit_btn {
   .checkbox_wrap label {
     display: inline !important;
     width: fit-content !important;
+  }
+  .form-control.calendar::after {
+    content: " ";
+    background-image: url("../images/icons/ic-calendar.svg");
+    display: inline-block;
+    width: 14px;
+    position: absolute;
+    height: 14px;
+    top: 38px;
+    right: 12.4%;
+    background-position: center;
+    z-index: 99;
+    background-color: #fff;
   }
 }
