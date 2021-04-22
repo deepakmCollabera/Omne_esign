@@ -69,7 +69,7 @@
         <div class="accordion-group custom_tr">
           <div class="accordion-heading">
             <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"
-              class="accordion-toggle custom_tr row " >
+              class="accordion-toggle custom_tr row collapsed" >
               <div class="custom_td col-sm-2 pl-5">12/15/2020 09:10 A.M</div>
               <div class="custom_td col-sm-3">
                 Additional Onboarding Documents
@@ -84,6 +84,7 @@
                       alt="ic-mail" /></span>
                   <span class="profile_card_show"><img src="./images/icons/ic-profile.svg" alt="ic-profile" />
                     <div class="profile_card">
+                      <span class="close_card"><img src="./images/icons/ic-close.svg" alt="ic-close" /></span>
                       <div class="d-flex align-items-center">
                         <div class="profile_logo">
                           <img src="./images/collaberasmall.svg" alt="collaberasmall" />
@@ -109,7 +110,6 @@
                           </p>
                         </div>
                       </div>
-
                     </div>
                   </span>
                   <span><img src="./images/icons/ic-pinned.svg" alt="ic-pinned" /></span>
@@ -117,7 +117,7 @@
               </div>
             </a>
           </div>
-          <div id="collapseOne" class="accordion-body expanded_data ">
+          <div id="collapseOne" class="accordion-body expanded_data collapse">
 
             <div class="row m-0">
               <div class="exp_sidebar col-sm-3 box">
@@ -152,7 +152,7 @@
                   </svg>
                   </span>
                   </p>
-                  <div class="docs_wrap  in" id="col_doc">
+                  <div class="docs_wrap  collapse in" id="col_doc">
                     <ul>
                       <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
@@ -176,7 +176,7 @@
                   </div>
                 </div>
                 <div class="docs_mainwrap">
-                  <p data-toggle="collapse" data-target="#pol_doc" class="">
+                  <p data-toggle="collapse" data-target="#pol_doc" class="" >
                     Information <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <defs>
                           <filter id="jt46s7kf9a" width="105%" height="107.6%" x="-2.5%" y="-3.5%" filterUnits="objectBoundingBox">
@@ -205,7 +205,7 @@
                   </svg>
                   </span>
                   </p>
-                  <div class="docs_wrap " id="pol_doc">
+                  <div class="docs_wrap collapse in" id="pol_doc">
                     <ul>
                       <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
@@ -242,7 +242,7 @@
                   </svg>
                   </span>
                   </p>
-                  <div class="docs_wrap " id="client_doc">
+                  <div class="docs_wrap collapse in" id="client_doc">
                     <ul>
                       <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
@@ -512,7 +512,7 @@
                   </svg>
                   </span>
                   </p>
-                  <div class="docs_wrap  in" id="col_doctwo">
+                  <div class="docs_wrap collapse in" id="col_doctwo">
                     <ul>
                       <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
@@ -565,7 +565,7 @@
                   </svg>
                   </span>
                   </p>
-                  <div class="docs_wrap " id="pol_doctwo">
+                  <div class="docs_wrap collapse in" id="pol_doctwo">
                     <ul>
                       <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
@@ -602,7 +602,7 @@
                   </svg>
                   </span>
                   </p>
-                  <div class="docs_wrap " id="client_doctwo">
+                  <div class="docs_wrap collapse in" id="client_doctwo">
                     <ul>
                       <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
@@ -1032,6 +1032,10 @@
               </div>
             </div>
           </div>
+          <div class="btn_wrap_modal">
+            <button class="reset_btn">Reset</button>
+            <button class="submit_btn">Submit</button>
+          </div>
           <p class="danger_text">
             Your privacy is very important to us. Collabera is committed to keeping your personal data safe and secure. Our security measures include encryption of data, security controls that protect our infrastructure, training and data security policies.
           </p>
@@ -1153,6 +1157,10 @@
                 <span><img src="./images/icons/ic-delete.svg" alt="ic-delete" /></span>
               </div>
             </div>
+          </div>
+          <div class="btn_wrap_modal">
+            <button class="reset_btn">Reset</button>
+            <button class="submit_btn">Submit</button>
           </div>
           <p class="danger_text">
             Your privacy is very important to us. Collabera is committed to keeping your personal data safe and secure. Our security measures include encryption of data, security controls that protect our infrastructure, training and data security policies.
