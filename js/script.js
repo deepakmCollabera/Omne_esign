@@ -21,6 +21,12 @@ $(document).ready(function(){
     e.preventDefault();
     $(this).children(".profile_card").toggleClass("active");
   })
+
+  $(".close_card").click(function(e){
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).parent(".profile_card").removeClass("active");
+  })
   
 })
 $(function() {
