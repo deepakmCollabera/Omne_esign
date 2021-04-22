@@ -60,6 +60,9 @@ button {
 .pl-2 {
   padding-left: 10px !important;
 }
+.pr-0 {
+  padding-right: 0 !important;
+}
 .pr-2 {
   padding-right: 10px !important;
 }
@@ -89,6 +92,12 @@ button {
 }
 .col_right_offset_6 {
   margin-right: 50%;
+}
+.text-initial{
+  text-transform: initial !important;
+}
+.w_100{
+  width: 100%;
 }
 /* header */
 .nav_menu {
@@ -249,6 +258,9 @@ input[type="radio"], input[type="checkbox"]{
   background-color: #f5f5f7;
   padding: 2rem;
   cursor: default;
+}
+.expanded_data > .row > .col-sm-9{
+  padding-right: 0;
 }
 .exp_sidebar {
   padding: 1.5rem;
@@ -741,6 +753,7 @@ input[type="radio"], input[type="checkbox"]{
   max-width: 50%;
   cursor: pointer;
   line-height: 1;
+  text-transform: initial;
 }
 .checkbox_wrap p {
   font-size: 12px;
@@ -770,10 +783,10 @@ input[type="radio"], input[type="checkbox"]{
   padding-top: 40px;
 }
 .license_wrap .row:last-child .lice_actions {
-  padding-top: 10px !important;
+  padding-top: 20px !important;
 }
 .add_lice {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .next_btn {
   font-size: 16px;
@@ -965,8 +978,7 @@ input[type="radio"], input[type="checkbox"]{
   font-size: 12px;
   color: #4a4a4a;
   font-weight: 400;
-  margin: 0 10px 0 0;
-  width: 35%;
+  margin: 0;
 }
 .form-control-2 input {
   width: -webkit-fill-available;
@@ -1030,6 +1042,9 @@ input[type="radio"], input[type="checkbox"]{
   padding: 6px;
   display: flex;
   justify-content: space-around;
+}
+.employment_det .table_wrap .custom_tr .custom_td:last-child{
+  align-items: center;
 }
 .address_det .table_wrap .custom_tr .custom_td img,
 .education_ef .table_wrap .custom_tr .custom_td img {
@@ -1167,7 +1182,7 @@ input[type="radio"], input[type="checkbox"]{
 .education_ef p {
   font-size: 12px;
   color: #4a4a4a;
-  margin: 1rem 0 0;
+  /* margin: 1rem 0 0; */
 }
 .switch_wrap {
   display: inline-block;
@@ -1190,6 +1205,7 @@ input[type="radio"], input[type="checkbox"]{
 }
 .switch_checkbox label {
   margin: 0;
+  text-transform: initial;
 }
 .switch_wrap input {
   position: absolute;
@@ -1586,7 +1602,7 @@ form .submit_form .submit_btn {
   border-top: 1px solid #56a9ff;
   border-bottom: 1px solid #56a9ff;
 }
-.physicalsign_doc .table_wrap .custom_tr:first-child, .info_table .table_wrap .custom_tr:first-child{
+.physicalsign_doc .table_wrap > .custom_tr, .info_table .table_wrap .custom_tr:first-child{
   background-color: #F2F5FA !important;
 }
 .physicalsign_doc .table_wrap .custom_tr .custom_td:last-child {
@@ -1602,6 +1618,7 @@ form .submit_form .submit_btn {
 .custom_table_body > .custom_tr {
   background-color: #ffffff !important;
 }
+
 .physicalsign_doc .custom_table_body .custom_tr:last-child {
   border-bottom: none !important;
 }
