@@ -1764,7 +1764,7 @@ form .submit_form .submit_btn {
   border-radius: 4px;
 }
 .total_completed{
-  border: 1px solid #9b9b9b;
+  border: 1px solid #b7b7b7;
   padding: .4rem;
   border-radius: 50%;
   width: 25px;
@@ -1774,6 +1774,11 @@ form .submit_form .submit_btn {
   justify-content: center;
   font-size: 12px;
   font-weight: 400;
+}
+
+/* arrow document collapse section - hiding */
+.docs_mainwrap p svg{
+  display: none !important;
 }
 
 /* Firfox -- Media query */
