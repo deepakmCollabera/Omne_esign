@@ -28,6 +28,10 @@ $(document).ready(function(){
     $(this).parent(".profile_card").removeClass("active");
   })
   
+  $(".docs_mainwrap p").click(function(e){
+    e.stopPropagation();
+    e.preventDefault();
+  })
 })
 $(function() {
   $('.box').matchHeight();
