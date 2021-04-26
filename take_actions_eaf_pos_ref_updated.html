@@ -118,6 +118,7 @@
             </a>
           </div>
           <div id="collapseOne" class="accordion-body collapse expanded_data">
+
             <div class="row m-0">
               <div class="exp_sidebar col-sm-3 box">
                 <h3 class="mt-0">eSignature Enabled</h3>
@@ -157,9 +158,9 @@
                   </p>
                   <div class="docs_wrap collapse in" id="col_doc">
                     <ul>
-                      <li >Offer Letter</li>
+                      <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
-                      <li class="active">Employment application Form</li>
+                      <li>Employment application Form</li>
                       <li>Project acceptance agreement</li>
                       <li>Consent Form</li>
                       <li>Project acceptance agreement</li>
@@ -272,10 +273,10 @@
                       <li >
                         Personal
                       </li>
-                      <li>
+                      <li class="active">
                         Position Preference
                       </li>
-                      <li >
+                      <li>
                         Address Details
                       </li>
                       <li>
@@ -284,7 +285,7 @@
                       <li>
                         Employment
                       </li>
-                      <li class="active">
+                      <li>
                         References
                       </li>
                       <li>
@@ -296,153 +297,129 @@
                     </ul>
                   </div>
                   <div class="ef_main">
-                    <div class="ef_form address_det">
-                      <h4>References</h4>
-                      <h5>Work History</h5>
-                      <div class="table_wrap">
-                        <div class="custom_tr row row-eq-height">
-                          <div class="custom_th col-sm-2">
-                            Name/Title
-                          </div>
-                          <div class="custom_th col-sm-3">
-                            Company
-                          </div>
-                          <div class="custom_th col-sm-1">
-                            State
-                          </div>
-                          <div class="custom_th col-sm-1">
-                            Country
-                          </div>
-                          <div class="custom_th col-sm-2">
-                            Phone
-                          </div>
-                          <div class="custom_th col-sm-3">
-                            EMAIL
-                          </div>
-                          <div class="custom_th col-sm-1">
-                            Actions
-                          </div>
-                        </div>
-                        <div class="custom_tr row row-eq-height">
-                          <div class="custom_td col-sm-2">
-                            Jason Vickers
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            Gulfstream Aerospace
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            CO
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            US
-                          </div>
-                          <div class="custom_td col-sm-2">
-                            (912) 688-4560
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            jason.vickers@gulfstream.com
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            <a href=""><img src="./images/icons/ic_edit.svg" alt="ic_edit.svg" /></a>
-                            <a href=""><img src="./images/icons/ic-delete.svg" alt="ic-delete.svg" /></a>
-                          </div>
-                        </div>
-                        <div class="custom_tr row row-eq-height">
-                          <div class="custom_td col-sm-2">
-                            Jason Vickers
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            Gulfstream Aerospace
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            CO
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            US
-                          </div>
-                          <div class="custom_td col-sm-2">
-                            (912) 688-4560
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            jason.vickers@gulfstream.com
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            <a href=""><img src="./images/icons/ic_edit.svg" alt="ic_edit.svg" /></a>
-                            <a href=""><img src="./images/icons/ic-delete.svg" alt="ic-delete.svg" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <h5>References Details <a href="" class="float-right"><img src="./images/icons/ic-add.svg" alt="ic-add" /></a> </h5>
-                      <hr />
+                    <div class="ef_form pos_ref">
+                      <h4>Position Preferences</h4>
                       <form action="" class="m-0">
-                        <div class="row formpad">
-                          <div class="col-sm-3">
-                            <div class="form-control">
-                              <label for="">Name/Title <span>*</span></label>
-                              <input type="text"  />
+                        <div class="row m-0 formpad">
+                          <div class="checkbox_wrap">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-3">
+                                <p class="m-0">Are you 18 years of age or older? <span class="required">*</span></p>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-control">
+                                  <input type="radio" name="radio_11" id="check_11">
+                                  <label for="check_11" class="ml-2">Yes</label>
+                                </div>
+                                <div class="form-control ml-3">
+                                  <input type="radio" name="radio_11" id="check_12">
+                                  <label for="check_12" class="ml-2">No</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-block">
+                              <p>If No, please attach a certificate from your current school permitting you to work.</p>
                             </div>
                           </div>
-                          <div class="col-sm-3">
-                            <div class="form-control">
-                              <label for="">company <span>*</span></label>
-                              <input type="text"  />
+                          <div class="form-control-2 row">
+                            <div class="col-sm-3 pr-0">
+                              <label for="">For what position are you applying?</label>
+                            </div>
+                            <div class="col-sm-9">
+                              <input type="text">
                             </div>
                           </div>
-                          <div class="col-sm-3">
-                            <div class="form-control dropdown">
-                              <label for="">State <span>*</span></label>
-                              <select>
-                                <option value="">-- State --</option>
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Others</option>
-                              </select>
+                          <div class="row">
+                            <div class="form-control-2 col-sm-6">
+                              <div class="row m-0 d-flex align-items-center w_100">
+                                <div class="col-sm-6 pr-0">
+                                  <label for="">Schedule desired</label>
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text">
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-control dropdown">
-                              <label for="">Country <span>*</span></label>
-                              <select>
-                                <option value="">-- Country --</option>
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Others</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-control ">
-                              <label for="">Phone<span>*</span></label>
-                              <input type="text"  />
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-control ">
-                              <label for="">email<span>*</span></label>
-                              <input type="text"  />
-                            </div>
-                          </div>
-                          <div class="col-sm-12 mt-3">
-                            <div class="form_reset_btn">
-                              <button class="reset_btn">Reset</button>
-                              <button class="add_address">Add Address</button>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <hr />
-                            <p class="common_text">Please confirm the type of references provided above.</p>
-                            <div class="form-control switch_checkbox">
-                              <label for="switch_one">Are these references your direct manager/supervisors? <span>*</span>  </label>
-                              <div class="switch_wrap">
-                                <input type="checkbox" checked />
-                                <span class="switch_no">No</span>
-                                <span class="switch_yes">Yes</span>
+                            <div class="form-control-2 col-sm-5 col-sm-offset-1">
+                              <div class="row m-0 d-flex align-items-center w_100">
+                                <div class="col-sm-5 pr-0 text-right">
+                                  <label for=""># of Hours per Week</label>
+                                </div>
+                                <div class="col-sm-7">
+                                  <input type="text">
+                                </div>
                               </div>
                             </div>
                           </div>
+                          <div class="checkbox_wrap">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-3">
+                                <p class="m-0">Could you work overtime? </p>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-control">
+                                  <input type="radio" name="radio_114" id="check_114">
+                                  <label for="check_114" class="ml-2">Yes</label>
+                                </div>
+                                <div class="form-control ml-3">
+                                  <input type="radio" name="radio_114" id="check_124">
+                                  <label for="check_124" class="ml-2">No</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-control-2 row">
+                            <div class="col-sm-3 pr-0">
+                              <label for="">What date could you start work? <span class="required">*</span></label>
+                            </div>
+                            <div class="col-sm-3">
+                              <input type="date">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox_wrap col-sm-6">
+                              <div class="row d-flex align-items-center m-0">
+                                <div class="col-sm-6 pr-0">
+                                  <p class="m-0">Could you travel if required by this position?</p>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-control">
+                                    <input type="radio" name="radio_115" id="check_112">
+                                    <label for="check_112" class="ml-2">Yes</label>
+                                  </div>
+                                  <div class="form-control ml-3">
+                                    <input type="radio" name="radio_115" id="check_121">
+                                    <label for="check_121" class="ml-2">No</label>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="form-control-2 col-sm-5 col-sm-offset-1">
+                              <div class="row m-0 d-flex align-items-center w_100">
+                                <div class="col-sm-5 pr-0 text-right">
+                                  <label for="">% of Time</label>
+                                </div>
+                                <div class="col-sm-7">
+                                  <input type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row m-0 checkbox_wrap">
+                            <div class="col-sm-6 pl-0">
+                              <p > <span class="d-block">
+                                If you live or work for the Company in California, Minnesota or Oklahoma: <br />
+                                <b>Check this box if you would like a free copy of your background report</b>  
+                              </span> </p>
+                            </div>
+                            <div class="col-sm-1 ml-3">
+                              <div class="form-control d_inline_flex">
+                                <input type="checkbox" name="radio_1" id="check_111">
+                                <label for="check_111" class="ml-2">Yes</label>
+                              </div>
+                            </div>
+                          </div>                          
                         </div>
                         <div class="row prevnext_wrap">
                           <button class="prev_btn"><img src="./images/icons/ic-prev.svg"
@@ -453,7 +430,6 @@
                       </form>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -675,11 +651,11 @@
                       </svg>
                     </span>
                   </p>
-                  <div class="docs_wrap collapse in" id="col_doc_one">
+                  <div class="docs_wrap  collapse in" id="col_doc_one">
                     <ul>
-                      <li >Offer Letter</li>
+                      <li class="active">Offer Letter</li>
                       <li>Project acceptance agreement</li>
-                      <li class="active">Employment application Form</li>
+                      <li>Employment application Form</li>
                       <li>Project acceptance agreement</li>
                       <li>Consent Form</li>
                       <li>Project acceptance agreement</li>
@@ -792,10 +768,10 @@
                       <li >
                         Personal
                       </li>
-                      <li>
+                      <li class="active">
                         Position Preference
                       </li>
-                      <li >
+                      <li>
                         Address Details
                       </li>
                       <li>
@@ -804,162 +780,141 @@
                       <li>
                         Employment
                       </li>
-                      <li class="active">
+                      <li>
                         References
                       </li>
                       <li>
                         Disclosures
                       </li>
+                      <li>
+                        Esign
+                      </li>
                     </ul>
                   </div>
                   <div class="ef_main">
-                    <div class="ef_form address_det">
-                      <h4>References</h4>
-                      <h5>Work History</h5>
-                      <div class="table_wrap">
-                        <div class="custom_tr row row-eq-height">
-                          <div class="custom_th col-sm-2">
-                            Name/Title
-                          </div>
-                          <div class="custom_th col-sm-3">
-                            Company
-                          </div>
-                          <div class="custom_th col-sm-1">
-                            State
-                          </div>
-                          <div class="custom_th col-sm-1">
-                            Country
-                          </div>
-                          <div class="custom_th col-sm-2">
-                            Phone
-                          </div>
-                          <div class="custom_th col-sm-3">
-                            EMAIL
-                          </div>
-                          <div class="custom_th col-sm-1">
-                            Actions
-                          </div>
-                        </div>
-                        <div class="custom_tr row row-eq-height">
-                          <div class="custom_td col-sm-2">
-                            Jason Vickers
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            Gulfstream Aerospace
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            CO
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            US
-                          </div>
-                          <div class="custom_td col-sm-2">
-                            (912) 688-4560
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            jason.vickers@gulfstream.com
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            <a href=""><img src="./images/icons/ic_edit.svg" alt="ic_edit.svg" /></a>
-                            <a href=""><img src="./images/icons/ic-delete.svg" alt="ic-delete.svg" /></a>
-                          </div>
-                        </div>
-                        <div class="custom_tr row row-eq-height">
-                          <div class="custom_td col-sm-2">
-                            Jason Vickers
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            Gulfstream Aerospace
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            CO
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            US
-                          </div>
-                          <div class="custom_td col-sm-2">
-                            (912) 688-4560
-                          </div>
-                          <div class="custom_td col-sm-3">
-                            jason.vickers@gulfstream.com
-                          </div>
-                          <div class="custom_td col-sm-1">
-                            <a href=""><img src="./images/icons/ic_edit.svg" alt="ic_edit.svg" /></a>
-                            <a href=""><img src="./images/icons/ic-delete.svg" alt="ic-delete.svg" /></a>
-                          </div>
-                        </div>
-                      </div>
-                      <hr />
-                      <h5>References Details <a href="" class="float-right"><img src="./images/icons/ic-add.svg" alt="ic-add" /></a> </h5>
-                      <hr />
+                    <div class="ef_form pos_ref">
+                      <h4>Position Preferences</h4>
                       <form action="" class="m-0">
-                        <div class="row formpad">
-                          <div class="col-sm-3">
-                            <div class="form-control">
-                              <label for="">Name/Title <span>*</span></label>
-                              <input type="text"  />
+                        <div class="row m-0 formpad">
+                          <div class="checkbox_wrap">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-3">
+                                <p class="m-0">Are you 18 years of age or older? <span class="required">*</span></p>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-control">
+                                  <input type="radio" name="radio_11" id="check_11">
+                                  <label for="check_11" class="ml-2">Yes</label>
+                                </div>
+                                <div class="form-control ml-3">
+                                  <input type="radio" name="radio_11" id="check_12">
+                                  <label for="check_12" class="ml-2">No</label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-block">
+                              <p>If No, please attach a certificate from your current school permitting you to work.</p>
                             </div>
                           </div>
-                          <div class="col-sm-3">
-                            <div class="form-control">
-                              <label for="">company <span>*</span></label>
-                              <input type="text"  />
+                          <div class="form-control-2 row">
+                            <div class="col-sm-3 pr-0">
+                              <label for="">For what position are you applying?</label>
+                            </div>
+                            <div class="col-sm-9">
+                              <input type="text">
                             </div>
                           </div>
-                          <div class="col-sm-3">
-                            <div class="form-control dropdown">
-                              <label for="">State <span>*</span></label>
-                              <select>
-                                <option value="">-- State --</option>
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Others</option>
-                              </select>
+                          <div class="row">
+                            <div class="form-control-2 col-sm-6">
+                              <div class="row m-0 d-flex align-items-center w_100">
+                                <div class="col-sm-6 pr-0">
+                                  <label for="">Schedule desired</label>
+                                </div>
+                                <div class="col-sm-6">
+                                  <input type="text">
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-control dropdown">
-                              <label for="">Country <span>*</span></label>
-                              <select>
-                                <option value="">-- Country --</option>
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Others</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-control ">
-                              <label for="">Phone<span>*</span></label>
-                              <input type="text"  />
-                            </div>
-                          </div>
-                          <div class="col-sm-3">
-                            <div class="form-control ">
-                              <label for="">email<span>*</span></label>
-                              <input type="text"  />
-                            </div>
-                          </div>
-                          <div class="col-sm-12 mt-3">
-                            <div class="form_reset_btn">
-                              <button class="reset_btn">Reset</button>
-                              <button class="add_address">Add Address</button>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <hr />
-                            <p class="common_text">Please confirm the type of references provided above.</p>
-                            <div class="form-control switch_checkbox">
-                              <label for="switch_one">Are these references your direct manager/supervisors? <span>*</span>  </label>
-                              <div class="switch_wrap">
-                                <input type="checkbox" checked />
-                                <span class="switch_no">No</span>
-                                <span class="switch_yes">Yes</span>
+                            <div class="form-control-2 col-sm-5 col-sm-offset-1">
+                              <div class="row m-0 d-flex align-items-center w_100">
+                                <div class="col-sm-5 pr-0 text-right">
+                                  <label for=""># of Hours per Week</label>
+                                </div>
+                                <div class="col-sm-7">
+                                  <input type="text">
+                                </div>
                               </div>
                             </div>
                           </div>
+                          <div class="checkbox_wrap">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-3">
+                                <p class="m-0">Could you work overtime? </p>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-control">
+                                  <input type="radio" name="radio_114" id="check_114">
+                                  <label for="check_114" class="ml-2">Yes</label>
+                                </div>
+                                <div class="form-control ml-3">
+                                  <input type="radio" name="radio_114" id="check_124">
+                                  <label for="check_124" class="ml-2">No</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-control-2 row">
+                            <div class="col-sm-3 pr-0">
+                              <label for="">What date could you start work? <span class="required">*</span></label>
+                            </div>
+                            <div class="col-sm-3">
+                              <input type="date">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="checkbox_wrap col-sm-6">
+                              <div class="row d-flex align-items-center m-0">
+                                <div class="col-sm-6 pr-0">
+                                  <p class="m-0">Could you travel if required by this position?</p>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="form-control">
+                                    <input type="radio" name="radio_115" id="check_112">
+                                    <label for="check_112" class="ml-2">Yes</label>
+                                  </div>
+                                  <div class="form-control ml-3">
+                                    <input type="radio" name="radio_115" id="check_121">
+                                    <label for="check_121" class="ml-2">No</label>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <div class="form-control-2 col-sm-5 col-sm-offset-1">
+                              <div class="row m-0 d-flex align-items-center w_100">
+                                <div class="col-sm-5 pr-0 text-right">
+                                  <label for="">% of Time</label>
+                                </div>
+                                <div class="col-sm-7">
+                                  <input type="text">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row m-0 checkbox_wrap">
+                            <div class="col-sm-6 pl-0">
+                              <p > <span class="d-block">
+                                If you live or work for the Company in California, Minnesota or Oklahoma: <br />
+                                <b>Check this box if you would like a free copy of your background report</b>  
+                              </span> </p>
+                            </div>
+                            <div class="col-sm-1 ml-3">
+                              <div class="form-control d_inline_flex">
+                                <input type="checkbox" name="radio_1" id="check_111">
+                                <label for="check_111" class="ml-2">Yes</label>
+                              </div>
+                            </div>
+                          </div>                          
                         </div>
                         <div class="row prevnext_wrap">
                           <button class="prev_btn"><img src="./images/icons/ic-prev.svg"
@@ -970,7 +925,6 @@
                       </form>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
