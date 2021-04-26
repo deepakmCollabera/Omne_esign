@@ -666,7 +666,7 @@ input[type="radio"], input[type="checkbox"]{
   min-height: 1390px !important;
 }
 .ef_main.dis_1{
-  min-height: 2420px !important;
+  min-height: 2490px !important;
 }
 .ef_head h3 {
   font-size: 16px;
@@ -997,6 +997,7 @@ input[type="radio"], input[type="checkbox"]{
   font-weight: normal;
   padding: 6px 12px;
   outline: none;
+  max-width: 100%;
 }
 /* .pos_ref .checkbox_wrap .form-control:last-child {
   display: inline !important;
@@ -1657,7 +1658,7 @@ form .submit_form .submit_btn {
   height: fit-content;
 }
 #supportingDocs .form-control.dropdown::after {
-  top: 31%;
+  top: 45%;
   right: 12%;
 }
 #supportingDocs .pos-relative,
@@ -1812,5 +1813,14 @@ form .submit_form .submit_btn {
     background-position: center;
     z-index: 99;
     background-color: #fff;
+  }
+  .checkbox_wrap .form-control{
+    padding: 0 !important;
+  }
+  .pos_ref .form-control.d_inline_flex{
+    display: inline-flex !important;
+  }
+  .certificate_wrap li{
+    width: max-content;
   }
 }
