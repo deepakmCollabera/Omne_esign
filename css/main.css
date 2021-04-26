@@ -663,7 +663,7 @@ input[type="radio"], input[type="checkbox"]{
   position: relative;
 }
 .ef_main.emp_1{
-  min-height: 1350px !important;
+  min-height: 1390px !important;
 }
 .ef_main.dis_1{
   min-height: 2420px !important;
@@ -703,6 +703,9 @@ input[type="radio"], input[type="checkbox"]{
   padding: 1rem 0;
   /* display: inline-table; */
   height: 70px;
+}
+.form-control.textarea_field{
+  height: auto;
 }
 .checkbox_wrap .form-control{
   height: auto;
@@ -1777,7 +1780,7 @@ form .submit_form .submit_btn {
 }
 
 /* arrow document collapse section - hiding */
-.docs_mainwrap p svg{
+.docs_mainwrap p svg, .info_table .accordion-toggle svg{
   display: none !important;
 }
 
