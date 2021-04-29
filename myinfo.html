@@ -58,15 +58,13 @@
               alt="ic-completed-docs-copy-2"
             />
             View Completed Docs
-            <span>10</span>
           </div>
           <div class="sn_item ">
             <img
-              src="./images/icons/review-policy-docs-copy-4.svg"
-              alt="review-policy-docs-copy-4"
+              src="./images/icons/review-policy-docs-copy-2.svg"
+              alt="review-policy-docs-copy-2"
             />
             Information
-            <span>7</span>
           </div>
         </div>
       </div>
@@ -77,207 +75,195 @@
     <div class="custom_container">
       <div class="main_wrapper myinfo_wrapper">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-sm-3 box">
             <div class="myinfo_side">
               <h4>Basic Information</h4>
-              <div class="row mb-3">
-                <div class="col-md-2">
+              <div class="row mb-3 mt-3">
+                <div class="col-sm-2">
                   <img src="./images/icons/user.svg" alt="user" />
                 </div>
-                <div class="col-md-10">
+                <div class="col-sm-10">
                   <h6>Zachary Smith</h6>
                   <p>Collabera ID: 1234</p>
                 </div>
               </div>
               <h5>Project Information</h5>
               <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
-              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
-              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <p><img src="./images/icons/location.svg" alt="location" /> Sunnyvale, CA</p>
+              <p><img src="./images/icons/ic-blue-calendar.svg" alt="ic-blue-calendar" /> 12/01/2020 <small>(Estimated Start)</small></p>
               <hr />
               <h5>Onboarding Contact</h5>
-              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
-              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
-              <p><img src="./images/icons/company.svg" alt="company" /> Wells Fargo</p>
+              <p><img src="./images/icons/user-2.svg" alt="user-2" /> Surekha Kumar</p>
+              <p> <img src="./images/icons/icon-mail-blue.svg" alt="icon-mail-blue" /> <a href="mailto:surekha@collabera.com"> surekha@collabera.com</a></p>
+              <p><img src="./images/icons/icon-phone-2.svg" alt="icon-phone-2" /> 973 889 5200</p>
             </div>
           </div>
-          <div class="col-md-9">
+          <div class="col-sm-9 box">
             <div class="keyinfo_wrap">
               <h4>Key Information</h4>
-              <h6>Name and SSN must match the information on your social security card</h6>
               <form action="">
+                <h6>Name and SSN must match the information on your social security card</h6>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-sm-4">
                     <div class="form-control required">
-                      <label for="">Last NAME <span>*</span></label>
+                      <label for="">Last NAME <span>*</span> <span class="ml-3"><img src="./images/icons/icon-info-small.svg" alt="icon-info-small" /></span></label>
                       <input type="text" placeholder="Enter Last Name" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control">
+                      <label for="">Middle NAME</label>
+                      <input type="text" placeholder="Enter Middle Name" />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control required">
+                      <label for="">First NAME <span>*</span></label>
+                      <input type="text" placeholder="Enter First Name" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control ssn_l">
+                      <label for="">SSN <span>*</span></label>
+                      <input type="text" placeholder="Enter SSN" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control calendar">
+                      <label for="">Date of Birth <span>*</span></label>
+                      <input type="date" placeholder="Enter Date of Birth" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="label_style">Gender <span class="required">*</span></p>
+                    <div class="row m-0 checkbox_wrap">
+                      <div class="form-control">
+                        <input type="radio" name="gender" id="male_id">
+                        <label for="male_id">Male</label>
+                      </div>
+                      <div class="form-control">
+                        <input type="radio" name="gender" id="female_id">
+                        <label for="female_id">Female</label>
+                      </div>
+                      <div class="form-control">
+                        <input type="radio" name="gender" id="non_id">
+                        <label for="non_id">Non-Binary</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="keyinfo_wrap mt-3">
+              <h4>Contact Information</h4>
+              <form action="">
+                <h6> Please update, if there is change in the information. </h6>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-control">
+                      <label for="">Home phone number</label>
+                      <input type="text" placeholder="Enter Phone Number" value="303-474-2354"  />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control ">
+                      <label for="">Work phone number</label>
+                      <input type="text" placeholder="Enter Work phone Number" value="303-474-2354"  />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control ">
+                      <label for="">Cell phone number</label>
+                      <input type="text" placeholder="Enter Cell phone Number" value="303-474-2354"  />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control required">
+                      <label for="">Prefered email id <span>*</span></label>
+                      <input type="text" placeholder="Enter Email" value="claar.zack@gmail.com" disabled readonly required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col_right_offset_4">
+                    <div class="form-control required">
+                      <label for="">Personal Email id <span>*</span></label>
+                      <input type="text" placeholder="Enter Email" value="claar.zack@gmail.com" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control required">
+                      <label for="">Address 2 <span>*</span></label>
+                      <input type="text" placeholder="Enter Address" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control required">
+                      <label for="">Address 1 </label>
+                      <input type="text" placeholder="Enter Address" required />
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control dropdown">
+                      <label for="">City <span>*</span></label>
+                      <select name="" id="" required>
+                        <option value="">- City -</option>
+                        <option value="" selected>Castle Rock</option>
+                        <option value="">New York</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control dropdown">
+                      <label for="">State <span>*</span></label>
+                      <select name="" id="" required>
+                        <option value="">- State -</option>
+                        <option value="" selected>Colorado</option>
+                        <option value="">New York</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-control dropdown">
+                      <label for="">Zip Code <span>*</span></label>
+                      <select name="" id="" required>
+                        <option value="">- State -</option>
+                        <option value="" selected>80104</option>
+                        <option value="">80102</option>
+                      </select>
                     </div>
                   </div>
                 </div>
               </form>
             </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="modal fade" id="supportingDocs">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Document Upload</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span
-                ><img src="./images/icons/ic-close.svg" alt="ic-close"
-              /></span>
-            </button>
-          </div>
-          <div class="modal-body p-0">
-            <div class="row m-0">
-              <div class="col-md-8">
-                <div class="draganddrop">
-                  <input type="file" />
-                  <span
-                    ><img src="./images/icons/ic-close.svg" alt="ic-close"
-                  /></span>
-                  <div class="dragtext mx-auto">
-                    <h2>
-                      Drag and Drop <br />
-                      your file here
-                    </h2>
-                    <p>
-                      Supporting Document <br />
-                      Federal W-4
-                    </p>
-                  </div>
-                </div>
-                <div class="basic_info">
-                  <table>
-                    <tr>
-                      <td>Candidate name :</td>
-                      <td>&nbsp;<b>Martin Ray</b></td>
-                    </tr>
-                    <tr>
-                      <td>Collabera ID :</td>
-                      <td>&nbsp;<b>1234</b></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="current_docs pt-2">
-                  <h4>Current Document List</h4>
-                  <div class="cd_main_wrap">
-                    <div class="cd_wrap">
-                      <div class="sl_num">1.</div>
-                      <div class="cd_title">
-                        Federal W-4
-                        <span class="float-right"
-                          ><img
-                            src="./images/icons/noun-upload-3129532.svg"
-                            alt="noun-upload-3129532"
-                        /></span>
-                      </div>
-                      <div class="cd_file">
-                        Federal W-4 .docx
-                        <span class="float-right"
-                          ><img
-                            src="./images/icons/ic-delete.svg"
-                            alt="ic-delete"
-                        /></span>
-                      </div>
-                      <div class="cd_time">3rd Feb, Fri. 2021 ● 16:35</div>
-                    </div>
-                    <div class="cd_wrap">
-                      <div class="sl_num">2.</div>
-                      <div class="cd_title">
-                        Federal W-4
-                        <span class="float-right"
-                          ><img
-                            src="./images/icons/noun-upload-3129532.svg"
-                            alt="noun-upload-3129532"
-                        /></span>
-                      </div>
-                      <div class="cd_file">
-                        Federal W-4 .docx
-                        <span class="float-right"
-                          ><img
-                            src="./images/icons/ic-delete.svg"
-                            alt="ic-delete"
-                        /></span>
-                      </div>
-                      <div class="cd_time">3rd Feb, Fri. 2021 ● 16:35</div>
-                    </div>
-                    <div class="cd_wrap">
-                      <div class="sl_num">3.</div>
-                      <div class="cd_title">
-                        Federal W-4
-                        <span class="float-right"
-                          ><img
-                            src="./images/icons/noun-upload-3129532.svg"
-                            alt="noun-upload-3129532"
-                        /></span>
-                      </div>
-                      <div class="cd_file">
-                        Federal W-4 .docx
-                        <span class="float-right"
-                          ><img
-                            src="./images/icons/ic-delete.svg"
-                            alt="ic-delete"
-                        /></span>
-                      </div>
-                      <div class="cd_time">3rd Feb, Fri. 2021 ● 16:35</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 p-0">
-                <div class="completed_docs">
-                  <h4 class="mt-0">Completed Documents (4)</h4>
-                  <div class="comd_main_wrap">
-                    <div class="com_doc">
-                      <h5>3rd Feb, Fri. 2021 ● 16:24</h5>
-                      <ul>
-                        <li>Offer Letter</li>
-                        <li>
-                          Project acceptance agreement
-                          <span class="float-right"
-                            ><img
-                              src="./images/icons/ic-attach.svg"
-                              alt="ic-attach"
-                            />&nbsp; (2)</span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="com_doc">
-                      <h5>3rd Feb, Fri. 2021 ● 16:24</h5>
-                      <ul>
-                        <li>Offer Letter</li>
-                        <li>
-                          Project acceptance agreement
-                          <span class="float-right"
-                            ><img
-                              src="./images/icons/ic-attach.svg"
-                              alt="ic-attach"
-                            />&nbsp; (2)</span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="row m-0 text-right">
+              <button class="submit_btn modal_open" data-modalName="confirm_submit">Submit</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
+    <div class="custom_modal" id="confirm_submit">
+      <div class="custom_modal_wrap">
+        <div class="custom_modal_header">
+          <h5 class="modal-title">Confirmation</h5>
+          <button class="close">
+            <span><img src="./images/icons/ic-close.svg" alt="ic-close" /></span>
+          </button>
+        </div>
+        <div class="custom_modal_body">
+          <p>Please verify the content before submission, as offer documents will have the same information.</p>
+          <div class="row m-0 text-right">
+            <button>Cancel</button>
+            <button class="confirm_btn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- main wrapper -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="./js/script.js"></script>
 </html>
