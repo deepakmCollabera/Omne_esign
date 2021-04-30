@@ -1033,7 +1033,7 @@ input[type="radio"], input[type="checkbox"]{
 .form-control.ssn_l::after{
   content: "L";
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 1%;
   background-color: #f2f2f2;
   padding: .2rem 1rem;
@@ -1066,7 +1066,15 @@ input[type="radio"], input[type="checkbox"]{
   color: #56a9ff;
   margin-right: 0;
 }
-
+.keyinfo_wrap .form-control label span,.keyinfo_wrap .required{
+  line-height: 0;
+}
+.keyinfo_wrap .form-control label{
+  line-height: 1;
+}
+.keyinfo_wrap .form-control.dropdown::after{
+  top: 33px;
+}
 /* EAF - POSITION REF */
 .form-control-2 {
   padding: 0.5rem 0 1.5rem;
